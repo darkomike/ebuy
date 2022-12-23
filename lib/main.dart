@@ -1,4 +1,5 @@
 import 'package:ecommerce/screens/index.dart';
+import 'package:ecommerce/screens/search_result.dart';
 import 'package:ecommerce/screens/signin.dart';
 import 'package:ecommerce/styles/colors.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Poppins',
       ),
-      home: const HomePage(),
+      home: const SearchResult(),
     );
   }
 }
