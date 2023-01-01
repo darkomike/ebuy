@@ -15,11 +15,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'E-commerce',
+      title: 'Ebuy',
       theme: ThemeData(
         fontFamily: 'Poppins',
       ),
-      home: const SearchResult(),
+      home: const SignIn(),
     );
   }
 }

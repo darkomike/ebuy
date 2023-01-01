@@ -54,9 +54,8 @@ class _SearchResultState extends State<SearchResult> {
                     },
                     icon: Icon(
                       Icons.filter_alt_outlined,
-                      color: _scaffoldKey.currentState!.isEndDrawerOpen
-                          ? primaryColor
-                          : tertiaryColor,
+                      color:  primaryColor
+                          
                     ))
               ],
               bottom: TabBar(
@@ -90,12 +89,13 @@ class _SearchResultState extends State<SearchResult> {
             ),
             endDrawer: Container(
               margin: const EdgeInsets.only(top: 90),
-              decoration: BoxDecoration(color: whiteColor),
+              decoration: const BoxDecoration(color: whiteColor),
               width: (3 / 4) * getSize(context).width,
               height: (8 / 8) * getSize(context).height,
               child: Card(
                 margin: EdgeInsets.zero,
-                child: Column(children: [
+                child: Column(
+                  children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
