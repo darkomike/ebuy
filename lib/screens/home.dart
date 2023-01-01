@@ -2,6 +2,7 @@ import 'package:ecommerce/screens/cart.dart';
 import 'package:ecommerce/screens/categories.dart';
 import 'package:ecommerce/screens/messages.dart';
 import 'package:ecommerce/screens/more.dart';
+import 'package:ecommerce/screens/notification.dart';
 import 'package:ecommerce/screens/profile.dart';
 import 'package:ecommerce/screens/search_result.dart';
 import 'package:ecommerce/styles/colors.dart';
@@ -197,7 +198,9 @@ class _HomePageState extends State<HomePage> {
       ),
       widthSpace,
       GestureDetector(
-        onTap: () {},
+        onTap: () {
+          push(context: context, destination: const MyNotification());
+        },
         child: SizedBox(
           height: 40,
           width: 40,
